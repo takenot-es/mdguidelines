@@ -1,0 +1,28 @@
+- title: Our Solution
+  url: /our-solution/
+  dropdown:
+  - title: Our Solution
+    url: /our-solution/
+  - title: Our Difference
+    url: /our-difference/
+  - title: Product Features
+    url:  /product-features/
+- title: Get Access
+  url: /get-access/
+  dropdown:
+  - title: Subscribe and License
+    url: /subscribe-and-license/
+  - title: Request Free Trial
+    url: /request-free-trial/
+  - title: ACOEM Member Signup
+    url: /acoem-member-signup/
+  - title: CA MTUS Signup
+    url: /ca-mtus-signup/
+  - title: Student Signup
+    url: /student-signup/
+- title: About Us
+  url: /about-us/
+- title: Library
+  url: /library/
+- title: Contact Us
+  url: /contact-us/

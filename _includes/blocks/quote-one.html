@@ -1,0 +1,27 @@
+<section class="py-4 quote-1">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-md-2 mb-2 mb-md-0 ms-auto d-flex align-items-center">
+                    <p class="display-6 text-dark quote bordered-headline bordered-headline-secondary">
+                        {{ section.content }}
+                    </p>
+                </div>
+                <div class="col-md-6 image-container">
+                    <figure class="border-figure">
+                        <img src="{{ section.headshot }}" alt="{{ section.author }} {{ section.title }}">
+                        <figcaption class="tile">
+                            <p class="mb-0">
+                                <strong>
+                                    {{ section.author }}
+                                </strong>
+                                <br>
+                                {{ section.title }}
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% include /blocks/jumbotron-article.html %}
+{% if page.enable_blocks %}
+    {% for section in page.page_sections %}
+        {% include /blocks/{{section.block }}.html %}
+    {% endfor %}
+    {% else %}
+    <article class="plain-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-11 mx-auto pt-2 pb-6">
+                    {{ page.content}}
+                </div>
+            </div>
+        </div>
+    </article>
+{% endif %}

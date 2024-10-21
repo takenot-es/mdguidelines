@@ -1,0 +1,42 @@
+<div class="post-card">
+    <a href="{{ include.url }}" class="card-inner">
+        <div class="card-image">
+            <img src="{{ include.image }}" alt="{{ include.alt }}">
+        </div>
+        <div class="card-content">
+            {% if include.type %}
+            <div class="card-content-type">
+                <p class="eyebrow">
+                    {% if include.type == 'article' %}
+                    <span class="material-symbols-outlined">
+                        article
+                    </span>
+                    {% endif %}
+                    {% if include.type == 'webinar' %}
+                    <span class="material-symbols-outlined">
+                        computer
+                    </span>
+                    {% endif %}
+                    {{ include.type }}
+                </p>
+            </div>
+            {% endif %}
+            <div class="card-content-container">
+                <h5>
+                    {{ include.title }}
+                </h5>
+                <p>
+                    {{ include.content }}
+                </p>
+            </div>
+            <div class="card-footer-container">
+                <p class="eyebrow">
+                    Read more
+                    <span class="material-symbols-outlined">
+                        trending_flat
+                    </span>
+                </p>
+            </div>
+        </div>
+    </a>
+</div>

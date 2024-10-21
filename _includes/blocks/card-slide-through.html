@@ -1,0 +1,40 @@
+<section class="bg-dark py-4 card-slide-through" data-bs-theme="dark">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h2 class="text-light bordered-headline bordered-headline-secondary">
+                        {{ section.headline }}
+                    </h2>
+                    {{ section.content }}
+                    {% if section.cta %}
+                    <p class="mt-4">
+                        <a href="{{ section.cta_url }}" class="btn btn-secondary">
+                            {{ section.cta }}
+                        </a>
+                    </p>
+                    {% endif %}
+                </div>
+                <div class="col-md-6 ms-auto">
+                    <div class="row">
+                        {% for servicer in section.servicers %}
+                        <div class="col-lg-6">
+                            <a href="{{ servicer.url }}" class="tile">
+                                <h4 class="h5">
+                                    {{ servicer.title}}
+                                    <span>
+                                        trending_flat
+                                    </span>
+                                </h4>
+                                <p>
+                                    {{ servicer.content }}
+                                </p>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

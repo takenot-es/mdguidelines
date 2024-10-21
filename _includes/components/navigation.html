@@ -1,0 +1,59 @@
+<header class="fixed-top">
+{% if site.banner == true or site.banner == 'true' %}
+<div class="masthead">
+    <a href="{{ site.banner_url }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="small">
+                        {{ site.banner_text }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+{% endif %}
+    <nav class="navbar navbar-expand-lg bg-white border-bottom border-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                {% include /components/logo.svg %}
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                {% for nav-item in site.data.navigation %}
+                    {% if nav-item.dropdown %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ nav-item.title }}
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% for dropdown-item in nav-item.dropdown %}
+                            <li>
+                                <a class="dropdown-item" href="{{ dropdown-item.url }}">
+                                    {{ dropdown-item.title }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if page.url == nav-item.url %} active{% endif %}" href="{{ nav-item.url }}">
+                                {{ nav-item.title }}
+                            </a>
+                        </li>
+                    {%endif %}
+                {% endfor %}
+                </ul>
+                
+                <a href="https://app.mdguidelines.com/" target="_blank" class="btn btn-secondary">
+                    Log in
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>

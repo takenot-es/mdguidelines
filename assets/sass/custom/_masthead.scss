@@ -1,0 +1,23 @@
+.masthead {
+    padding: $grid-gutter-width * .5;
+    background-color: $dark;
+    transition: .2s ease-in-out;
+
+    a {
+        text-decoration: none;
+        color: $white;
+
+        p {
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+    }
+
+    &.scrolled {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+    }
+
+}

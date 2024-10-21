@@ -1,0 +1,74 @@
+.jumbotron-home {
+    padding-top: 100px;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .image {
+        position: relative;
+        z-index: 1;
+
+        figure {
+            height: 100%;
+            min-height: 600px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .split {
+            position: absolute;
+            min-height: 100vh;
+            width: 100vw;
+            left: 50%;
+            z-index: -1;
+
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+            }
+
+            &.one {
+                top: 100%;
+            }
+
+            &.two {
+                bottom: 0%;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        margin-top: 155px;
+    }
+
+}
+
+.jumbotron-landing-banner {
+    background-color: $dark;
+    overflow: hidden;
+
+    .col-md-6 {
+        min-height: 75vh;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (max-width: $breakpoint-md) {
+            min-height: 50vh;
+        }
+
+    }
+
+}

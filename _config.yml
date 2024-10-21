@@ -1,0 +1,36 @@
+title: "MDGuidelines - Evidence-Based Clinical Guidelines"
+email: ryan.underwood@alight.com
+description: "MDGuidelines supports better patient outcomes with evidence-based guidelines and disability durations for diagnostic interventions and return to activity."
+author: Ryan Underwood
+favicon: "https://www.mdguidelines.com/wp-content/uploads/2022/07/favicon.png"
+baseurl: ""
+url: ""
+
+banner: 'true'
+banner_text: "Learn about traumatic brain injury and workplace violence in a new MDGuidelines-authored research article published in the British Medical Journal."
+banner_url: '/library/oemed-2024-109437/'
+
+phone:
+  - number: 1-800-442-4519
+    label: USA
+  - number: 1-833-550-0094
+    label: Canada
+  - number: 1-317-743-2126
+    label: Int'l
+
+sass:
+  sass_dir: "/assets/sass/"
+  style: compressed
+
+collections:
+  pages:
+    title: pages
+    output: true
+    permalink: '/:title/'
+  library:
+    title: library
+    output: true
+    permalink: /library/:year/:month/:categories/:title/
+
+plugins:
+  - jekyll-feed

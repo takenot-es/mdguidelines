@@ -1,0 +1,50 @@
+footer.top-footer {
+
+    .subscribe-panel, .navigation-panel {
+        padding: $spacer-4 0;
+    }
+
+    .subscribe-panel {
+        background-color: $darker;
+    }
+
+    .navigation-panel {
+        background-color: $dark;
+    }
+
+    .logo-container {
+        svg {
+            width: 125px;
+            #md {
+                fill: $white;
+            }
+            #guidelines{
+                fill: $light;
+            }
+        }
+    }
+
+    ul.footer-nav {
+        li a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+}
+
+footer.sub-footer {
+    background-color: $black;
+    padding: $spacer 0;
+    p {
+        color: $white;
+        margin-bottom: 0;
+        font-size: 12px;
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+
+    }
+}

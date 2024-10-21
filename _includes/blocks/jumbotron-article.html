@@ -1,0 +1,74 @@
+{% capture header_image %}
+    {% if page.featured_image %}
+        {{ page.featured_image }}
+    {% elsif page.loop_image %}
+        {{ page.loop_image }}
+    {% elsif page.og_image %}
+        {{ page.og_image }}
+    {% endif %}
+{% endcapture %}
+
+<header class="jumbotron-article">
+    <div class="container-fluid pt-8 pb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-md-center">
+                    <p class="eyebrow bordered-headline bordered-headline-secondary">
+                        {{ page.type }}
+                    </p>
+                </div>
+                <div class="col-md-10 mx-auto text-md-center">
+                    <h1 class="display-4">
+                        {{ page.title }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative">
+        <div class="bg-light position-absolute" style="top: 0; right: 0; left: 0; height: 300px; z-index: -1;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <figure class="border-figure figure-cover figure-height-600">
+                        <img src="{{ header_image }}" alt="{{ page.title }} header image">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-auto mx-auto">
+                <p class="d-flex align-items-center">
+                    <span class="material-symbols-outlined me-1">
+                        calendar_month
+                    </span>
+                    {{ page.date | date: "%m/%d/%Y" }}
+                </p>
+            </div>
+            <div class="col-auto mx-auto">
+                <p class="d-flex align-items-center">
+                    <span class="material-symbols-outlined me-1">
+                        schedule
+                    </span>
+                    {% include /snippets/reading-time.html %}
+                </p>
+            </div>
+            <div class="col-auto mx-auto">
+                <p class="d-flex align-items-center">
+                    <span class="material-symbols-outlined me-1">
+                        person
+                    </span>
+                    {% if page.author %}
+                        {{ page.author }}
+                    {% else %}
+                        MDGuidelines
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

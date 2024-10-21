@@ -1,0 +1,36 @@
+figure.border-figure {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 10%;
+        bottom: 10%;
+        left: 10%;
+        right: 10%;
+        border: 1px solid $light;
+    }
+
+}
+
+.figure-cover {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-fit: center;
+    }
+
+}
+
+ $figure-heights: (100: 100px, 200:200px, 300:300px, 400:400px, 500:500px, 600:600px);
+
+ .figure-height {
+    @each $title, $value in $figure-heights {
+        &-#{$title} {
+            height: #{$value};
+        }
+    }
+ }

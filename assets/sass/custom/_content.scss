@@ -1,0 +1,51 @@
+.plain-content {
+    p {
+        strong {
+            color: $darker;
+        }
+    }
+
+    p a, ul li a {
+        font-weight: 700;
+        color: $primary;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        + p {
+            margin-bottom: $spacer-2;
+        }
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            margin-left: $spacer;
+        }
+
+        li::marker {
+            content: '— ';
+            color: $primary;
+            font-weight: 700;
+        }
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        height: 600px;
+        margin-top: $spacer-2;
+        margin-bottom: $spacer-2;
+    }
+
+    h2 {
+        margin-bottom: $h2-font-size;
+    }
+
+    .callout {
+        padding: $grid-gutter-width;
+        background-color: $primary;
+        color: $white;
+    }
+
+}

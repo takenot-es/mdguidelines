@@ -1,0 +1,83 @@
+<footer class="top-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 subscribe-panel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 mx-auto">
+                            <div class="logo-container mb-4">
+                                {% include /components/logo.svg %}
+                            </div>
+                            <h5 class="text-white">
+                                MDGuidelines is the Gold Standard of Evidence-Based Guidelines
+                            </h5>
+                            <p class="mt-2">
+                                <a href="/subscribe/" class="btn btn-secondary">
+                                    Subscribe now
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 navigation-panel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 offset-md-1">
+                            <h5 class="text-secondary">
+                                The measure of health.
+                            </h5>
+                            <p class="text-white">
+                                {{ site.description }}
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled p-0 footer-nav">
+                                <li>
+                                    <p class="eyebrow text-secondary">
+                                        Navigation
+                                    </p>
+                                </li>
+                                {% for nav-item in site.data.navigation %}
+                                <li>
+                                    <a href="{{ nav-item.url }}">
+                                        {{ nav-item.title }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled p-0 footer-nav">
+                                <li>
+                                    <p class="eyebrow text-secondary">
+                                        Connect with us
+                                    </p>
+                                </li>
+                                {% for number in site.phone %}
+                                <li>
+                                    <a href="tel:{{ number.number | remove:'-'}}">
+                                        {{ number.number }} ({{number.label }})
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="sub-footer">
+    <div class="container">
+        <div class="row">
+            <p>
+                Copyright &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>, Reed Group, LLC. All Rights Reserved | 
+                <a href="/legal/privacy-policy/">Privacy Policy</a> | 
+                <a href="/legal/accessibility/">Accessibility</a> | 
+                <a href="/legal/terms-of-use/">Terms of Use</a>
+            </p>
+        </div>
+    </div>
+</footer>

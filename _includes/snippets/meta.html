@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="8JeyKKcCa07i4SN7RJtVeFuVIu2O4vSyaPn_o9qjv3M" />
+<title>{% if page.title %}{{ page.title }} - MDGuidelines{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.description  %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<link rel="shortcut icon" type="image/png" href="{{ site.favicon }}">
+<link rel="shortcut icon" sizes="192x192" href="{{ site.favicon }}">
+<link rel="apple-touch-icon" href="{{ site.favicon }}">
+ <!-- Facebook integration -->
+<meta property="og:title" content="{{ page.title }}"/>
+<meta property="og:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
+<meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"/>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ site.title }}"/>
+<meta property="og:description" content="{% if page.description  %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+<!-- Twitter integration -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{ site.twitter_url }}">
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+<meta name="twitter:description" content="{% if page.description  %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'SangBleu Kingdom';
+    src: url('/assets/fonts/SangBleuKingdom-Italic.eot');
+    src: url('/assets/fonts/SangBleuKingdom-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/SangBleuKingdom-Italic.woff2') format('woff2'),
+        url('/assets/fonts/SangBleuKingdom-Italic.woff') format('woff'),
+        url('/assets/fonts/SangBleuKingdom-Italic.ttf') format('truetype'),
+        url('/assets/fonts/SangBleuKingdom-Italic.svg#SangBleuKingdom-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SangBleu Kingdom';
+    src: url('/assets/fonts/SangBleuKingdom-Regular.eot');
+    src: url('/assets/fonts/SangBleuKingdom-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/SangBleuKingdom-Regular.woff2') format('woff2'),
+        url('/assets/fonts/SangBleuKingdom-Regular.woff') format('woff'),
+        url('/assets/fonts/SangBleuKingdom-Regular.ttf') format('truetype'),
+        url('/assets/fonts/SangBleuKingdom-Regular.svg#SangBleuKingdom-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderat';
+    src: url('/assets/fonts/Moderat-Bold.eot');
+    src: url('/assets/fonts/Moderat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Moderat-Bold.woff2') format('woff2'),
+        url('/assets/fonts/Moderat-Bold.woff') format('woff'),
+        url('/assets/fonts/Moderat-Bold.ttf') format('truetype'),
+        url('/assets/fonts/Moderat-Bold.svg#Moderat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderat';
+    src: url('/assets/fonts/Moderat-Bold-Italic.eot');
+    src: url('/assets/fonts/Moderat-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Moderat-Bold-Italic.woff2') format('woff2'),
+        url('/assets/fonts/Moderat-Bold-Italic.woff') format('woff'),
+        url('/assets/fonts/Moderat-Bold-Italic.ttf') format('truetype'),
+        url('/assets/fonts/Moderat-Bold-Italic.svg#Moderat-Bold-Italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderat';
+    src: url('/assets/fonts/Moderat-Medium-Italic.eot');
+    src: url('/assets/fonts/Moderat-Medium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Moderat-Medium-Italic.woff2') format('woff2'),
+        url('/assets/fonts/Moderat-Medium-Italic.woff') format('woff'),
+        url('/assets/fonts/Moderat-Medium-Italic.ttf') format('truetype'),
+        url('/assets/fonts/Moderat-Medium-Italic.svg#Moderat-Medium-Italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderat';
+    src: url('/assets/fonts/Moderat-Regular.eot');
+    src: url('/assets/fonts/Moderat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Moderat-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Moderat-Regular.woff') format('woff'),
+        url('/assets/fonts/Moderat-Regular.ttf') format('truetype'),
+        url('/assets/fonts/Moderat-Regular.svg#Moderat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderat';
+    src: url('/assets/fonts/Moderat-Medium.eot');
+    src: url('/assets/fonts/Moderat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Moderat-Medium.woff2') format('woff2'),
+        url('/assets/fonts/Moderat-Medium.woff') format('woff'),
+        url('/assets/fonts/Moderat-Medium.ttf') format('truetype'),
+        url('/assets/fonts/Moderat-Medium.svg#Moderat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderat';
+    src: url('/assets/fonts/Moderat-Regular-Italic.eot');
+    src: url('/assets/fonts/Moderat-Regular-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Moderat-Regular-Italic.woff2') format('woff2'),
+        url('/assets/fonts/Moderat-Regular-Italic.woff') format('woff'),
+        url('/assets/fonts/Moderat-Regular-Italic.ttf') format('truetype'),
+        url('/assets/fonts/Moderat-Regular-Italic.svg#Moderat-Regular-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

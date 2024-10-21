@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        {% include /snippets/meta.html %}
+        {% include /snippets/styles.html %}
+        {% include /snippets/google-analytics.html %}
+    </head>
+<body class="{{ page.layout }} {{ page.title | downcase | replace: ' ', '-' }} {% unless page.url == '/' %}{{ page.url | replace: '/', '-' | downcase }}{% endunless %} {{ page.classes }} {{ site.title }}" id="{{ page.title | downcase | replace: ' ', '-' }}">
+{% include /components/navigation.html %}
