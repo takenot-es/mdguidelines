@@ -1,0 +1,54 @@
+
+<section class="py-4 bg-light">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="bordered-headline bordered-headline-secondary">
+                        Related posts
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            
+            <div class="row">
+                {% assign target_categories = page.categories %}
+                {% assign sorted = site.library | sort: 'date' | reverse %}
+                {% assign limit_count = 3 %}
+                {% assign displayed_count = 0 %}
+                
+                {% for item in sorted %}
+                    {% if displayed_count < limit_count %}
+                        {% assign has_matching_category = false %}
+                        {% for category in target_categories %}
+                            {% if item.categories contains category %}
+                                {% assign has_matching_category = true %}
+                            {% endif %}
+                        {% endfor %}
+                
+                        {% if has_matching_category and item.title != page.title %}
+                            {% include /components/cards/post-card.html 
+                                url=item.url 
+                                image=item.loop_image
+                                title=item.title
+                                content=item.description
+                                type=item.type
+                            %}
+                            {% assign displayed_count = displayed_count | plus: 1 %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}                
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-auto mx-auto">
+                    <a href="/library/" class="btn btn-secondary">
+                        Read more of our library
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

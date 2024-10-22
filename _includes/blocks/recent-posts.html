@@ -11,7 +11,7 @@
         </div>
         <div class="container mt-4">
             <div class="row">
-            {% assign sorted = site.library | sort: 'date' | reverse %}
+            {% assign sorted = site.library | sort: 'date' %}
             {% for item in sorted | limit: 3 %}
             {% include /components/cards/post-card.html 
                 url=item.url 

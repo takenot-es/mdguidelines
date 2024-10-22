@@ -2,6 +2,10 @@
 layout: article
 type: article
 title: "Mild traumatic brain injury caused by workplace violence in a US workers’ compensation system"
+categories:
+- durations
+- new tool
+- product
 loop_image: 'https://images.unsplash.com/photo-1578496480240-32d3e0c04525'
 og_image: 'https://images.unsplash.com/photo-1578496480240-32d3e0c04525'
 description: 'MDGuidelines authored a new peer-review article published in the British Medical Journal – Occupational and Environmental Medicine. This is the first research documenting that mild traumatic brain injuries (mTBI), like concussions, caused by workplace violence are more common in the US than Canada or Australia. Workers with a mTBI claim caused by workplace violence tended to be younger, have higher income, and be in the education, public administration, or healthcare industries. These results can help employers create more targeted initiative to better protect employees and support return to work programs.'

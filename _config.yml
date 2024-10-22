@@ -30,7 +30,7 @@ collections:
   library:
     title: library
     output: true
-    permalink: /library/:year/:month/:categories/:title/
+    permalink: /library/:year/:title/
 
 plugins:
   - jekyll-feed

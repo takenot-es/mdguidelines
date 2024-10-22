@@ -4,6 +4,11 @@ type: article
 title: "Experience the Power of MDGuidelines Durations’ compensation system"
 loop_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d'
 og_image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d'
+categories:
+- disability 
+- durations
+- new tool
+- product
 description: 'The newly designed MDGuidelines Durations tool presents return to activity timeframes in a simplified, interactive dashboard to help manage patient cases.'
 ---
 **The newly designed MDGuidelines Durations tool presents return to activity timeframes in a simplified, interactive dashboard to help manage patient cases.**
