@@ -1,0 +1,17 @@
+<section class="2-col-content py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h2 class="bordered-headline bordered-headline-secondary">
+                    {{ section.headline }}
+                </h2>
+                {{ section.content}}
+            </div>
+            <div class="col-md-6 ms-auto">
+                <figure>
+                    <img src="{{ section.image }}" alt="{{ section.image_alt }}" class="img-fluid">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>

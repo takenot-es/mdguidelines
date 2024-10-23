@@ -31,7 +31,8 @@ page_sections:
   - title: Employers
     url: /our-difference/
     content: 'Understand prognosis for conditions and procedures. Support accommodations for return to activity. Enhance workforce productivity.'
-- block: stat-block-home
+- block: stat-block-3-col
+  background_color: null
   headline: 'The Measure of Health'
   content: 'Integrating evidence-based guidelines, duration estimates and clinical analytics help drive better outcomes. Rigorous methodology and transparency make MDGuidelines the most trusted name in the industry.'
   stats:

@@ -1,0 +1,14 @@
+{% assign dark_theme_bg = "black, dark, primary, darker" | split: ", " %}
+
+{% capture background_color %}
+    bg-{{ section.background_color }}
+{% endcapture %}
+
+{% capture bg_dark_theme %}
+    {% for value in dark_theme_bg %}
+        {% if section.background_color == value %}
+            data-bs-theme="dark"
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endcapture %}

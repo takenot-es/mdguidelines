@@ -1,0 +1,27 @@
+<section class="py-md-4 section-slide-through">
+    <div class="container position-relative">
+        <div class="row">
+            {% for card in section.cards %}
+            <div class="slide-card col-12 bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="headline-container">
+                                <h2 class="bordered-headline bordered-headline-secondary">
+                                    {{ card.headline }}
+                                </h2>
+                            </div>
+                            <div class="content-container">
+                                {{ card.content }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="{{ card.image }}" alt="{{ card.headline }} hero image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
