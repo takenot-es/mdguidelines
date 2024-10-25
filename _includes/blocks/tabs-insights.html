@@ -1,0 +1,49 @@
+{% include /snippets/dark-mode.html %}
+
+<section class="tabs-insights desktop  {{ background_color }}" {{ bg_dark_theme }}>
+<div class="tabs">
+    {% for insight in section.insights %}
+        <a class="tab-link div_open {% if forloop.first %}active{% endif %}" data-div="div-{{ forloop.index }}">
+        {{ insight.tab }}
+        </a>
+    {% endfor %}
+</div>
+{% for insight in section.insights %}
+    <div class="div-content {% if forloop.first %}show{% endif %}" data-div="div-{{ forloop.index }}" id="div-{{ forloop.index }}">
+        <div class="image" style="background-image: url({{ insight.image }})">
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 content-container">
+                    <div class="container">
+                        <h4 class="bordered-headline bordered-headline-secondary text-dark">
+                            {{ insight.title }}
+                        </h4>
+                        <p>
+                            {{ insight.content}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</section>
+<section class="tabs-insights section-padding-y mobile  {{ background_color }}" {{ bg_dark_theme }}>
+    <div class="container">
+        <div class="row">
+            {% for insight in section.insights %}
+            <div class="col-12">
+                <img src="{{ insight.image }}" alt="{{ insight.title }}" class="img-fluid mb-2">
+                <h4 class="bordered-headline bordered-headline-secondary">
+                    {{ insight.title }}
+                </h4>
+                <p>
+                    {{ insight.content }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

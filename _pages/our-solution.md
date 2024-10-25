@@ -27,4 +27,19 @@ page_sections:
     content: 'Cases'
   - number: '1'
     content: 'Solution'
+- block: tabs-insights
+  background_color: light
+  insights:
+  - title: "Disability & Return-to-Activity"
+    tab: Disability
+    content: "MDGuidelines was founded over 30 years ago by Dr. Presley Reed. His dedication to helping people return to health after illness or injury inspires the work we do every day. MDGuidelines' return-to-activity information benefits employers, nurse case managers, and claims professionals by helping them understand clinical information and disability recovery estimates."
+    image: "https://images.unsplash.com/photo-1706702161719-2486412c3efb"
+  - title: "Workers' Compensation"
+    tab: Compensation
+    content: "MDGuidelines is widely used by some of the country's largest state workers' compensation systems, including those in New York and California. MDGuidelines’ evidence-based clinical practice guidelines and return-to-activity information help healthcare providers, case managers, claims professionals, carriers, and regulators manage cases quickly and effectively."
+    image: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe"
+  - title: "Industry's Most Trusted Guidelines"
+    tab: Guidelines
+    content: "With tools like Duration Views, Health Advisor and Job Title Explorer, MDGuidelines consistently delivers the highest degree of clinical accuracy for professionals in healthcare, disability, workers' compensation and insurance. MDGuidelines can be personalized to support the individual needs of users from different fields."
+    image: "https://images.unsplash.com/photo-1578496479914-7ef3b0193be3"
 ---

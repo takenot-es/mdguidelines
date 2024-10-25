@@ -1,3 +1,18 @@
+.section-padding-y {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+}
+
+.section-padding-x {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+}
+
+.section-padding {
+    @extend .section-padding-x;
+    @extend .section-padding-y;
+}
+
 .card-slide-through {
 
     .tile {
@@ -129,6 +144,111 @@
         --tile-background: #{$darker} !important;
         --tile-headline: #{$light} !important;
         --tile-content-color: #{$white} !important;
+    }
+
+}
+
+.tabs-insights.desktop {
+    position: relative;
+    min-height: 90vh;
+    z-index: 1;
+
+    @media screen and (max-width: $breakpoint-md) {
+        display: none;
+    }
+
+    .image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .content-container {
+        background-color: $white;
+        padding-top: $grid-gutter-width;
+        padding-bottom: $grid-gutter-width;
+    }
+
+    .div-content {
+        display: none;
+        min-height: 90vh;
+        align-items: end;
+        padding-top: $grid-gutter-width;
+        padding-bottom: $grid-gutter-width;
+
+        &.show {
+            display: flex;
+        }
+
+    }
+
+    .tabs {
+        position: absolute;
+        top: $spacer-4;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: $grid-gutter-width * .25;
+        display: flex;
+        flex-direction: row;
+        background: rgba($white, .5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        .tab-link {
+            color: $dark;
+            text-transform: uppercase;
+            font-size: 12px;
+            text-decoration: none;
+            padding: $grid-gutter-width;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s ease-in-out;
+
+            &.active {
+                color: $light;
+                background-color: $darker;
+            }
+
+        }
+
+    }
+
+}
+
+.tabs-insights.mobile {
+    --content-color: #{$body-color};
+    --headline-color: #{$dark};
+
+    display: none;
+
+    @media screen and (max-width: $breakpoint-md) {
+        display: flex;
+    }
+
+    .col-12 {
+        margin-bottom: $grid-gutter-width;
+    }
+
+    h4 {
+        color: var(--headline-color);
+    }
+
+    p {
+        color: var(--content-color);
+    }
+
+    &.bg-dark, &.bg-primary {
+        --content-color: #{$white};
+        --headline-color: #{$white}; 
     }
 
 }
