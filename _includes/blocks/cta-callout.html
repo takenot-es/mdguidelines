@@ -1,0 +1,41 @@
+{% include /snippets/dark-mode.html %}
+
+<section class="cta-callout section-padding-y {{ background_color }}" {{ bg_dark_theme }}>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="bordered-headline bordered-headline-secondary">
+                    {{ section.headline }}
+                </h2>
+                {{ section.content }}
+                {% if section.callout_content %}
+                <div class="callout">
+                    <p>
+                        {{ section.callout_content }}
+                    </p>
+                    <a href="{{ section.callout_url }}" class="btn btn-light" target="_blank">
+                        {{ section.callout_cta }}
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+            <div class="col-md-4 ms-auto mt-2 mt-md-0">
+                <div class="cta-box">
+                    <div>
+                        <h4 class="bordered-headline bordered-headline-secondary">
+                            {{ section.cta_box_headline }}
+                        </h4>
+                    </div>
+                    <div>
+                        <p>
+                            {{ section.cta_box_content }}
+                        </p>
+                        <a href="{{ section.cta_box_url }}" class="btn btn-secondary">
+                            {{ section.cta_box_cta }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  

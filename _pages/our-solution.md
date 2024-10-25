@@ -28,7 +28,7 @@ page_sections:
   - number: '1'
     content: 'Solution'
 - block: tabs-insights
-  background_color: light
+  background_color: dark
   insights:
   - title: "Disability & Return-to-Activity"
     tab: Disability
@@ -42,4 +42,14 @@ page_sections:
     tab: Guidelines
     content: "With tools like Duration Views, Health Advisor and Job Title Explorer, MDGuidelines consistently delivers the highest degree of clinical accuracy for professionals in healthcare, disability, workers' compensation and insurance. MDGuidelines can be personalized to support the individual needs of users from different fields."
     image: "https://images.unsplash.com/photo-1578496479914-7ef3b0193be3"
+- block: cta-callout
+  headline: 'About ACOEM'
+  content: '<p class="lead">MDGuidelines is the sole publisher of the American College of Occupational and Environmental Medicine’s (ACOEM) gold standard, evidence-based guidelines. ACOEM, founded in 1916, is the nation’s largest medical society dedicated to promoting the health of workers through preventive medicine, clinical care, research, and education.</p><p>ACOEM’s clinical guidelines incorporate the latest evidence-based, peer-reviewed medical studies and meet the National Academy of Medicine’s quality standards. ACOEM recommendations power everything from our drug formulary to our treatment recommendations using easy-to-use, interactive tools.</p>'
+  callout_content: 'Read the latest ACOEM Methodology paper to learn more about how the clinical guidelines are created.'
+  callout_cta: 'View the PDF'
+  callout_url: 'https://mdguidelines.com/wp-content/uploads/MDG_Articles/MDG_WhitePapers/Methodology-2017-Update.pdf'
+  cta_box_headline: 'ACOEM Member Sign Up'
+  cta_box_content: '<p>ACOEM membership includes free access to MDGuidelines for research purposes only (not for commercial use).</p><p>Learn more about how to become an ACOEM member at www.ACOEM.org</p>'
+  cta_box_cta: Sign Up
+  cta_box_url: /acoemmembers/
 ---

@@ -137,3 +137,13 @@
   font-size: 12px;
   color: $white;
 }
+
+.callout {
+  padding: $grid-gutter-width;
+  background-color: $primary;
+
+  p {
+    color: $white;
+  }
+
+}
