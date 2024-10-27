@@ -1,14 +1,19 @@
-<section class="2-col-content section-padding-y">
+{% include /snippets/dark-mode.html %}
+
+<section class="2-col-content section-padding-y" {{ bg_dark_theme }}>
     <div class="container">
-        <div class="row">
-            <div class="col-md-5">
+        <div class="row align-items-center">
+            <div class="col-md-5 {% if section.order == reverse or section.order == 'reverse' %} order-md-2 {% endif %}">
+                {% if section.headline %}
                 <h2 class="bordered-headline bordered-headline-secondary">
                     {{ section.headline }}
                 </h2>
+                {% endif %}
+
                 {{ section.content}}
             </div>
-            <div class="col-md-6 ms-auto">
-                <figure>
+            <div class="col-md-6 {% unless section.order == 'reverse' or section.order == reverse %} ms-auto {% endunless %}">
+                <figure class="mb-0">
                     <img src="{{ section.image }}" alt="{{ section.image_alt }}" class="img-fluid">
                 </figure>
             </div>

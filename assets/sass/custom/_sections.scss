@@ -1,6 +1,6 @@
 .section-padding-y {
-    padding-top: $grid-gutter-width;
-    padding-bottom: $grid-gutter-width;
+    padding-top: $grid-gutter-width * 2;
+    padding-bottom: $grid-gutter-width * 2;
 }
 
 .section-padding-x {
@@ -14,18 +14,28 @@
 }
 
 .card-slide-through {
+    --cst-headline: #{$primary};
+    --cst-sm-headline: #{$secondary};
+    --cst-content: #{$body-color};
+    --cst-tile-hover: #{$light};
+
+    h2 {
+        color: var(--cst-headline);
+    }
+
+    color: var(--cst-content);
 
     .tile {
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        color: $light;
+        color: var(--cst-content);
         padding: $grid-gutter-width * .5;
         margin-bottom: $grid-gutter-width;
         transition: .3s all ease-in-out;
 
         h4 {
-            color: $secondary;
+            color: var(--cst-sm-headline);
             position: relative;
             display: inline-flex;
             align-items: center;
@@ -33,27 +43,43 @@
             span {
                 font-family: $font-family-icons;
                 margin-left: $spacer;
-                color: rgba($white, .3);
+                color: var(--cst-sm-headline);
+                opacity: .6;
                 transition: .3s all ease-in-out;
             }
 
         }
 
         &:hover {
-            background-color: $darker;
+            background-color: var(--cst-tile-hover);
 
             h4 {
-                color: $white;
+                
 
                 span {
                     margin-left: $spacer-2;
-                    color: $secondary;
+                    color: var(--cst-sm-headline);
+                    opacity: 1;
                 }
 
             }
 
         }
 
+    }
+
+    &.bg-dark {
+        --cst-headline: #{$white};
+        --cst-sm-headline: #{$secondary};
+        --cst-content: #{$white};
+        --cst-tile-hover: #{$darker};
+    }
+
+    &.bg-light {
+        --cst-headline: #{$dark};
+        --cst-sm-headline: #{$dark};
+        --cst-content: #{$body-color};
+        --cst-tile-hover: #{$white};
     }
 
 
@@ -275,4 +301,109 @@
         }
 
     }
+}
+
+.motion-cards-insights {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	position: relative;
+	min-height: 650px;
+	width: 100vw;
+    overflow: hidden;
+}
+
+.motion-cards-insights .motion-card {
+	margin-left: $grid-gutter-width * .5;
+	margin-right: $grid-gutter-width * .5;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: all 200ms ease-in-out 50ms;
+
+    &-overlay {
+        background-color: rgba($black, .5);
+        height: 100%;
+    }
+
+    &-content {
+        padding: $grid-gutter-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &-toggle {
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $light;
+        color: $darker;
+    }
+
+}
+
+.motion-cards-insights .default {
+	height: 600px;
+	width: 33vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	overflow: hidden;
+
+    .content {
+        transform: translateY(100%);
+        opacity: 0;
+        transition: all ease-in-out .5s;
+        max-width: 60%;
+    }
+}
+
+.motion-cards-insights .expand {
+	height: 600px;
+	width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    .content {
+        transform: translateY(00%);
+        opacity: 1;
+    }
+
+}
+
+.motion-insights.mobile {
+    --content-color: #{$body-color};
+    --headline-color: #{$dark};
+
+    display: none;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        display: flex;
+    }
+
+    .col-12 {
+        margin-bottom: $grid-gutter-width;
+    }
+
+    h4 {
+        color: var(--headline-color);
+    }
+
+    p {
+        color: var(--content-color);
+    }
+
+    &.bg-dark, &.bg-primary {
+        --content-color: #{$white};
+        --headline-color: #{$white}; 
+    }
+
 }

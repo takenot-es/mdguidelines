@@ -1,9 +1,11 @@
-<section class="bg-dark section-padding-y card-slide-through" data-bs-theme="dark">
+{% include /snippets/dark-mode.html %}
+
+<section class="bg-{{ section.background_color }} section-padding-y card-slide-through" {{ bg_dark_theme }}>
     <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-2 mb-md-0">
-                    <h2 class="text-light bordered-headline bordered-headline-secondary">
+                    <h2 class="bordered-headline bordered-headline-secondary">
                         {{ section.headline }}
                     </h2>
                     {{ section.content }}
@@ -19,6 +21,7 @@
                     <div class="row">
                         {% for servicer in section.servicers %}
                         <div class="col-lg-6">
+                            {% if servicer.url %}
                             <a href="{{ servicer.url }}" class="tile">
                                 <h4 class="h5">
                                     {{ servicer.title}}
@@ -30,6 +33,16 @@
                                     {{ servicer.content }}
                                 </p>
                             </a>
+                            {% else %}
+                            <div class="tile">
+                                <h4 class="h5">
+                                    {{ servicer.title}}
+                                </h4>
+                                <p>
+                                    {{ servicer.content }}
+                                </p>
+                            </div>
+                            {% endif %}
                         </div>
                         {% endfor %}
                     </div>

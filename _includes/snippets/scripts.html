@@ -21,3 +21,24 @@
         });
     });
 </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+$(function() {
+	
+	
+	$('.motion-card').addClass('default');
+	
+	$('.motion-card').on('click', function() {
+		var e = $('.motion-cards-insights > .motion-card');
+		if ($(this).hasClass('expand')) {
+			// If the clicked motion-card has 'expand', remove it
+			$(this).removeClass('expand');
+		} else {
+			// Remove 'expand' from all motion-cards, then add to the clicked one
+			e.removeClass('expand');
+			$(this).addClass('expand');
+		}
+	});
+	
+});
+</script>

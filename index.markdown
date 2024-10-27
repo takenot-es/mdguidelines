@@ -12,7 +12,8 @@ page_sections:
   cta_2_url: '/our-difference/'
 - block: card-slide-through
   headline: Who we help
-  content: '<p class="text-white">MDGuidelines can be personalized based on your professional role. Whether you are a clinician, case manager, utilization reviewer or analyst, you can choose to tailor your own web experience by selecting the tools and views that fit your needs.</p>'
+  background_color: dark
+  content: '<p>MDGuidelines can be personalized based on your professional role. Whether you are a clinician, case manager, utilization reviewer or analyst, you can choose to tailor your own web experience by selecting the tools and views that fit your needs.</p>'
   cta: Explore the platform
   cta_url: /product-features/
   servicers:

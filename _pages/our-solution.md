@@ -19,7 +19,7 @@ page_sections:
     headline: 'Unmatched Focus on Quality'
     content: '<p>High-quality data and literature drives everything we do, from predictive modeling and making medical recommendations, to updating our duration estimates and generating treatment cost calculations. MDGuidelines includes evidence-based guidelines from the American College of Occupational and Environmental Medicine (ACOEM).</p>'
 - block: stat-block-3-col
-  background_color: dark
+  background_color: white
   stats:
   - number: '30+'
     content: 'Years'
@@ -27,8 +27,8 @@ page_sections:
     content: 'Cases'
   - number: '1'
     content: 'Solution'
-- block: tabs-insights
-  background_color: dark
+- block: motion-cards-insights
+  background_color: white
   insights:
   - title: "Disability & Return-to-Activity"
     tab: Disability

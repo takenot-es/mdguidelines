@@ -1,0 +1,25 @@
+<section class="motion-cards-insights d-none d-lg-flex bg-{{ section.background_color }}">
+	{% for insight in section.insights %}
+        {% include /components/cards/motion-card.html 
+        id = insight.tab
+        background =  insight.image    
+        %}
+    {% endfor %}
+</section>
+<section class="motion-insights section-padding-y mobile  {{ background_color }}" {{ bg_dark_theme }}>
+    <div class="container">
+        <div class="row">
+            {% for insight in section.insights %}
+            <div class="col-12">
+                <img src="{{ insight.image }}" alt="{{ insight.title }}" class="img-fluid mb-2">
+                <h4 class="bordered-headline bordered-headline-secondary">
+                    {{ insight.title }}
+                </h4>
+                <p>
+                    {{ insight.content }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
